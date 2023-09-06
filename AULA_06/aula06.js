@@ -1,7 +1,7 @@
 
 async function pegarImagens (){
 
-    const url = 'https://api.thecatapi.com/v1/images/search?limit=10'
+    const url = 'https://dog.ceo/api/breed/pug/images' 
 
     const response = await fetch(url)
     const imagens = await response.json()
