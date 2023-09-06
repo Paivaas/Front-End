@@ -1,0 +1,164 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+body{
+    background-color: rgb(228, 220, 220);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/*Item*/
+.item-conteiner{
+    background-color: white;
+    padding: 20px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px;
+    border-radius: 0px 0px 12px 12px;
+    height: 620px;
+    border-top: 1px solid pink;
+    overflow-y: scroll;
+}
+.item-conteiner::-webkit-scrollbar{
+    background-color: pink;  
+    width: 12px; 
+    border-radius: 20px;     
+    border: 3px solid rgb(238, 171, 193)
+}
+.item{
+    padding: 8px 12px;
+    border-radius: 12px;
+    display: flex;
+    gap: 8px;
+    height: 84px;
+    justify-content: space-between;
+    border: 1px solid rgb(187, 183, 183);
+}
+.parte1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.parte2{
+    cursor: pointer;
+}
+.sub-parte2{
+    display: flex;
+    gap: 12px;
+    padding-right: 8px;
+    width: 244px;
+    height: 40px;
+}
+.nome{
+    font-size: 28px;
+}
+.mensagens-nao-lidas{
+    background-color: pink;
+    color: white;
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+.destinatario{
+    position: relative;
+    top: 10px;
+    background-color: pink;
+    border-radius: 24px;
+    width: 150px;
+    color: white;
+    display: grid;
+    justify-self: center;
+    text-align: center;
+}
+.mensagem{
+    color: rgb(88, 82, 82);
+    font-size: 14px;
+}
+.tempo{
+    color: rgb(88, 82, 82);
+    font-size: 12px;
+}
+
+/* Imagens */
+.informacoes img{
+    width: 50px;
+    height: 50px;
+}
+.informacoes img:nth-child(3){
+    border: 3px solid palevioletred;
+    border-radius: 50%;
+    cursor: pointer;
+}
+.social{
+    position: relative;
+    top: 16px;
+    left: 50px;
+    width: 50px;
+    cursor: pointer;
+    transition: .2s;
+}
+.social:hover{
+    transform: scale(1.09);
+}
+.foto-perfil{
+    width: 50px;
+    border-radius: 50%;
+}
+
+/* Celular */
+.contorno-celular{
+    background-color: black;
+    padding: 20px 20px;
+    border: 8px outset rgb(99, 93, 93);
+    border-radius: 12px;
+    flex-direction: column;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.contorno-celular button{
+    border-radius: 50%;
+    width: 28px;
+    height: 28px;
+    cursor: pointer;
+}
+.informacoes{
+    background-color: pink;
+    height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    border-radius: 12px 12px 0px 0px;
+}
+.informacoes p{
+    color: palevioletred;
+    font-weight: bold;
+}
+
+/* liga e Desliga */
+
+.desligado{
+    display: block;
+}
+.ligado{
+    display: none;
+}
+.telaCelular{
+    z-index: 1;
+    position: absolute;
+    background-color: rgb(49, 47, 47);
+    width: 476px;
+    height: 690px;
+    border-radius: 10px;
+}
