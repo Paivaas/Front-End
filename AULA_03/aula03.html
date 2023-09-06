@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./aula03.css">
+    <link rel="icon" href="./img/florIcon.png">
+    <script src="./aula03.js" defer></script>
+    <title>Calculadoras</title>
+</head>
+<body>
+
+    <div class="conteiner">
+
+        <div class="item">
+            <h1>SOMA</h1>
+            <label for="">Parcela 1</label>
+            <input type="text" id="nome">
+
+            <label for="">Parcela 2</label>
+            <input type="text" id="numero2">
+
+            <div class="final">
+                <button id="somar">Ver resultado</button>
+                <span class="resultado" id="resultado"></span>
+            </div>
+        </div>
+
+        <div class="item">
+            <h1>SUBTRAÇÃO</h1>
+            <label for="">Minuendo</label>
+            <input type="text" id="SUBnumero1">
+
+            <label for="">Subtraendo</label>
+            <input type="text" id="SUBnumero2">
+
+            <div class="final">
+                <button id="subtrair">Ver resultado</button>
+                <span class="resultado"id="SUBresultado"></span>
+            </div>
+        </div>
+
+        <div class="item">
+            <h1>MULTIPLICAÇÃO</h1>
+            <label for="">Multiplicando</label>
+            <input type="text" id="MULnumero1">
+
+            <label for="">Multiplicador</label>
+            <input type="text" id="MULnumero2">
+
+            <div class="final">
+                <button id="multiplicar">Ver resultado</button>
+                <span class="resultado"id="MULresultado"></span>
+            </div>
+        </div>
+
+        <div class="item">
+            <h1>DIVISÃO</h1>
+            <label for="">Dividendo</label>
+            <input type="text" id="DIVnumero1">
+
+            <label for="">Divisor</label>
+            <input type="text" id="DIVnumero2">
+
+            <div class="final">
+                <button id="dividir">Ver resultado</button>
+                <span class="resultado"id="DIVresultado"></span>
+            </div>
+        </div>
+    
+        <div class="item">
+            <h1>IDENTICAR</h1>
+            <label for="">Número</label>
+            <input type="text" id="numero-item2">
+
+            <div class="final">
+                <button id="identificar">Ver resultado</button>
+                <span class="resultado"id="resultado-item2"></span>
+            </div>
+        </div>
+
+        <div class="item MEDIA">
+
+        
+            <h1>MEDIA</h1>
+
+            <div class="pt1">
+                <label for="">Nota 1</label>
+                <input type="text" id="NOTA1">
+
+                <label for="">Nota 2</label>
+                <input type="text" id="NOTA2">
+            </div>
+
+            <div class="pt2">
+                <label for="">Nota 3</label>
+                <input type="text" id="NOTA3">
+
+                <label for="">Nota 4</label>
+                <input type="text" id="NOTA4">
+            </div>
+
+
+            <div class="final">
+                <button id="media">Ver MEDIA</button>
+                
+                <span class="resultado"id="Medresultado"></span>
+
+                <p>Situação:</p>
+                <span class="situacao"id="Situacao"></span>
+            </div>
+
+            <div id="notaAdd" class="otaAadd sumir">
+
+                <div class="allAdd">
+
+                    <section class="section1">
+                        <label for=""><h1>Nota Adicional:</h1></label>
+                        <input type="text" id="NOTAdd">
+                    </section>
+                    
+                    <button id="mediaAdd">Ver nova MEDIA</button>
+                   
+                    <section class="section2">
+                        <span class="resultado"id="MedresultadoAdd"></span>
+                        <p>Situação final:</p>
+                        <span class="situacao"id="SituacaoAdd"></span>
+                    </section>
+            
+                </div>
+
+            </div>
+        </div>
+
+        <div class="item SOMA100">
+            <h1>SOMA > 100</h1>
+
+            <div class="pt1">
+
+                <label for="">A</label>
+                <input type="text" id="numero1SOMA100">
+
+                <label for="">B</label>
+                <input type="text" id="numero2SOMA100">
+
+                <label for="">C</label>
+                <input type="text" id="numero3SOMA100">
+            
+            </div>
+
+            <div class="final">
+                <button id="SOMA100">Ver resultado</button>
+                <span class="resultado"id="resultadoSOMA100"></span>
+            </div>
+
+        </div>
+
+        <div class="item de1a9">
+            <h1>Número de 1 a 9</h1>
+
+            <label for="">Digite um número inteiro:</label>
+            <input type="text" id="numero1a9">
+
+            <div class="final">
+                <button id="botao1a9">Ver resultado</button>
+                <span class="resultado"id="resultado1a9"></span>
+            </div>
+
+
+        </div>
+
+        <div class="item por30">
+            <h1>Resultado > 30</h1>
+
+            <label for="">Número que será multiplicado por 2</label>
+            <input type="text" id="numeroPor30">
+
+            <div class="final">
+                <button id="botaoPor30">Ver resultado</button>
+                <span class="resultado"id="resultadoPor30"></span>
+            </div>
+        </div>
+
+         <div class="item bhaskara">
+            <h1>Bhaskara</h1>
+
+            <div class="inicio">
+
+                <label for="">A</label>
+                <input type="text" id="numero1BHAS">
+
+                <label for="">B</label>
+                <input type="text" id="numero2BHAS">
+
+                <label for="">C</label>
+                <input type="text" id="numero3BHAS">
+            
+            </div>
+
+            <div class="final">
+                <button id="btn-ResultadoBHAS">Ver resultado</button>
+                <div>
+                    <h4>x1</h4>
+                    <span class="resultado"id="resultadoBHAS"></span>
+                </div>
+                <div>
+                    <h4>x2</h4>
+                    <span class="resultado"id="resultado2BHAS"></span>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+    
+</body>
+</html>

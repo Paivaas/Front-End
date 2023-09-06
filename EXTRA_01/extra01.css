@@ -1,0 +1,36 @@
+
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   }
+   .lampadaDesligada{
+    background-image: url(./img/desligada.jpg);
+    width: 220px;
+    height: 300px;
+    background-size: cover;
+   }
+   .lampadaLigada{
+    background-image: url(./img/ligada.jpg);
+    width: 220px;
+    height: 300px;
+    background-size: cover;
+   }
+   .lampadaQuebrada{
+    background-image: url(./img/quebrada.jpg);
+    width: 220px;
+    height: 300px;
+    background-size: cover;
+   }
+   
+   .botoes{
+    display: flex;
+    justify-content: center;
+    gap: 4px;
+   }
+   
+   .cor1{
+    background-color: purple;
+   }
+   

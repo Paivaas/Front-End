@@ -1,0 +1,112 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    color: white;
+    font-family: 'Noto Sans', sans-serif;
+}
+body{
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+header{
+    height: 30vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+h2{
+    color: #fff;
+    font-weight: 100;
+    background-image: linear-gradient(120deg, hsl(298, 62%, 37%), hsl(318, 81%, 72%));
+    padding: 6px 16px;
+    border-radius: 4px;
+}
+.tille {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.letter {
+    transition: 0.4s;
+    transform: translateX(0);
+    cursor: grab;
+    font-size: 9rem;
+}
+.letter:hover { 
+    transform: translatey(-1rem);
+    background: -webkit-linear-gradient(10deg, hsl(298, 62%, 37%), hsl(318, 81%, 72%));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+} 
+main{
+    min-height: 30vh;
+    width: 820px;
+}
+.conteiner-item{
+    display: flex;
+    justify-content: space-between;
+}
+.item1, .item2{
+    display: flex;
+    flex-direction: column;
+    gap: 28px;
+}
+h1{
+    font-size: 24px;
+    font-weight: 100;
+}
+.tabela{
+    display: flex;
+    flex-direction: column;
+    gap: 38px;
+}
+.linha{
+    display: flex;
+    gap: 48px;
+}
+.item2 .number p{
+    background-color: palevioletred;
+}
+.item2 .number p::after{
+    border: solid 24px palevioletred;
+}
+.number{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+} 
+.number p{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 5rem;
+    height: 5rem;
+    background-color: purple;
+    border-radius: 50%;
+    position: relative;
+}
+.number p::after{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: -1;
+    border-radius: 50%;
+    border: solid 24px purple;
+    animation: pulse 4s infinite;
+    animation-direction: alternate, reverse;
+}
+@keyframes pulse {
+    to{
+      transform: scale(1.4);
+      opacity: .2;
+    }
+}
+a{
+    text-decoration: none;
+}

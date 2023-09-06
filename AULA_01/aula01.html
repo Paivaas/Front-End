@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="pt=br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="./img/icon.png">
+    <script src="aula01.js" defer></script>
+    <title>Cadastro</title>
+    <style>
+
+        *{
+            font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif
+        }
+        body{
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            overflow: hidden;
+        }
+        .all{
+            border-radius: 20px;
+            width: 300px;
+        }
+    
+        h1{
+            background-color: grey;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .cadastro{
+            border:1px solid black;
+            width: 200px;
+            height: 240px;
+            padding: 10px;
+        }
+        .cadastro div{
+            display: flex;
+        }
+        p{
+            padding-left: 2px;
+        }
+    
+        .blue{
+            color: blue;
+        }
+        .red{
+            color: red;
+        }
+    
+    </style>
+</head>
+<body>
+
+    <div class="all">
+        <h1 id="titulo">Sem titulo</h1>
+        <button id="trocarTitulo">Trocar titulo</button>
+        <hr></hr>
+        
+        <main>
+            <div class="cadastro">
+                <div> <p>Nome:</p><p id="Nome"></p></div>
+                <div> <p>Idade:</p><p id="Idade"></p></div>
+                <div> <p>Cidade:</p><p id="Cidade"></p></div>
+                <div> <p>Media:</p><p id="Media"></p></div>
+                <button id="cadastrar">cadastrar</button>
+            </div>
+        </main>
+    </div>
+    
+</body>
+</html>
